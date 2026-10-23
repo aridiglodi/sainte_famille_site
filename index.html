@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087443">
+  <meta name="description" content="La Grande Rencontre des Générations du Collège Sainte-Famille : une seule école, plusieurs générations, une même famille !">
+  <title>La Grande Rencontre des Générations — Collège Sainte-Famille</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="accueil">Aller au contenu</a>
+
+  <section class="intro-screen" id="intro" aria-label="Bienvenue">
+    <div class="intro-sun"></div>
+    <div class="intro-field"><span class="field-line"></span><span class="field-circle"></span></div>
+    <div class="intro-content">
+      <div class="school-mark" aria-hidden="true">✦</div>
+      <p class="eyebrow">COLLÈGE SAINTE-FAMILLE</p>
+      <div class="intro-ball" aria-hidden="true">⚽</div>
+      <h1>La Grande Rencontre<br><span>des Générations</span></h1>
+      <p class="intro-tagline">Une seule école, plusieurs générations, une même famille !</p>
+      <button class="button button-gold" id="enter-button">Entrer dans la fête <span aria-hidden="true">→</span></button>
+      <p class="intro-note">Football • Retrouvailles • Fraternité</p>
+    </div>
+    <div class="intro-bottom">HIER, AUJOURD’HUI ET DEMAIN : TOUJOURS SAINTE-FAMILLE !</div>
+  </section>
+
+  <div class="site-shell" id="site" hidden>
+    <header class="site-header">
+      <a class="brand" href="accueil" aria-label="Collège Sainte-Famille, accueil">
+        <span class="brand-icon">✦</span>
+        <span><strong>Collège Sainte-Famille</strong><small>La Grande Rencontre des Générations</small></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#accueil">Accueil</a><a href="#generations">Les générations</a><a href="#programme">Programme</a><a href="#souvenirs">Souvenirs</a><a href="#participer">Participer</a>
+      </nav>
+      <a class="header-cta" href="#participer">Je participe <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero section" id="accueil">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="live-dot"></span> UNE JOURNÉE POUR SE RETROUVER</p>
+          <h2>ANCIENS ÉLÈVES <span class="handshake">🤝</span><br><span class="green-text">NOUVEAUX ÉLÈVES</span></h2>
+          <p class="hero-lead">Le Collège Sainte-Famille vous invite à une journée exceptionnelle de retrouvailles, de football, de joie et de fraternité.</p>
+          <p class="hero-sub">Venez partager un moment inoubliable entre générations. Ici, chaque passe rapproche, chaque sourire rassemble et chaque souvenir nous unit.</p>
+          <div class="hero-actions"><a class="button button-green" href="#participer">Je participe <span>→</span></a><a class="text-link" href="#programme">Découvrir le programme <span>↓</span></a></div>
+          <div class="hero-mini-values"><span>⚽ Football amical</span><span>♡ Fraternité</span><span>✦ Fair-play</span></div>
+        </div>
+        <div class="hero-art reveal" aria-label="Illustration d'un terrain de football ensoleillé">
+          <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+          <div class="stands"><span>✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦</span></div>
+          <div class="pitch">
+            <div class="pitch-box pitch-box-top"></div><div class="pitch-box pitch-box-bottom"></div><div class="pitch-midline"></div><div class="pitch-circle"></div>
+            <div class="player player-one"><i></i><b></b></div><div class="player player-two"><i></i><b></b></div>
+            <div class="player player-three"><i></i><b></b></div><div class="player player-four"><i></i><b></b></div>
+            <span class="floating-ball">⚽</span>
+          </div>
+          <div class="art-caption"><span class="caption-icon">♡</span><span><strong>Deux générations, une famille</strong><small>Les souvenirs nous rassemblent.</small></span></div>
+          <span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✧</span>
+        </div>
+      </section>
+
+      <section class="event-strip" aria-label="Informations de l'événement">
+        <div class="event-item"><span class="event-icon">📅</span><div><small>DATE</small><strong data-event="date">À compléter</strong></div></div>
+        <div class="event-item"><span class="event-icon">🕘</span><div><small>HEURE</small><strong data-event="time">À compléter</strong></div></div>
+        <div class="event-item"><span class="event-icon">📍</span><div><small>LIEU</small><strong data-event="venue">À compléter</strong></div></div>
+        <div class="event-item"><span class="event-icon">🤝</span><div><small>ESPRIT</small><strong>Joie & fair-play</strong></div></div>
+      </section>
+
+      <section class="countdown-section section">
+        <div><p class="eyebrow">LE GRAND JOUR APPROCHE</p><h2>Le compte à rebours<br><span class="green-text">de nos retrouvailles</span></h2><p class="muted">Le compte à rebours démarrera dès que l’organisateur aura renseigné la date et l’heure exactes.</p></div>
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div><strong id="days">--</strong><span>Jours</span></div><b>:</b><div><strong id="hours">--</strong><span>Heures</span></div><b>:</b><div><strong id="minutes">--</strong><span>Minutes</span></div><b>:</b><div><strong id="seconds">--</strong><span>Secondes</span></div>
+        </div>
+        <p class="countdown-status" id="countdown-status">Date de l’événement à configurer.</p>
+      </section>
+
+      <section class="section generations-section" id="generations">
+        <div class="section-heading reveal"><p class="eyebrow">UNE HISTOIRE, UN AVENIR</p><h2>Deux générations.<br><span class="green-text">Une seule famille.</span></h2><p>Les années passent, mais notre lien avec Sainte-Famille demeure.</p></div>
+        <div class="generation-cards">
+          <article class="generation-card old-card reveal"><div class="card-illustration alumni-art"><span class="art-sun"></span><span class="person person-a"></span><span class="person person-b"></span><span class="person person-c"></span><span class="art-heart">♡</span></div><div class="card-body"><span class="card-kicker">LES RACINES</span><h3>Les Anciens Élèves</h3><p>Ils ont écrit une partie de l’histoire de Sainte-Famille. Aujourd’hui, ils reviennent partager leurs souvenirs, leur expérience et leur joie avec la nouvelle génération.</p><span class="card-bottom">Nos souvenirs nous unissent <span>✦</span></span></div></article>
+          <div class="between-badge reveal" aria-label="Poignée de main">🤝<small>UNIS POUR<br>TOUJOURS</small></div>
+          <article class="generation-card new-card reveal"><div class="card-illustration students-art"><span class="art-sun"></span><span class="person person-a"></span><span class="person person-b"></span><span class="person person-c"></span><span class="art-star">✦</span></div><div class="card-body"><span class="card-kicker">L’AVENIR</span><h3>Les Nouveaux Élèves</h3><p>Ils représentent l’avenir de Sainte-Famille. Avec leur énergie, leur enthousiasme et leur esprit d’équipe, ils sont prêts à vivre une belle journée de fraternité.</p><span class="card-bottom">Demain s’écrit ensemble <span>✦</span></span></div></article>
+        </div>
+        <blockquote class="family-quote reveal"><span>“</span><p>Sur le terrain, nous sommes adversaires pendant le match. Dans la vie, nous restons une seule famille.</p><span>♡</span></blockquote>
+      </section>
+
+      <section class="program-section section" id="programme">
+        <div class="section-heading reveal"><p class="eyebrow">CHAQUE MOMENT COMPTE</p><h2>Le programme <span class="green-text">de la journée</span></h2><p>Une journée remplie de sourires, de sport et de retrouvailles.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-time">À définir</div><div class="timeline-pin">☀</div><div class="timeline-card"><span>👋</span><div><h3>Accueil des participants</h3><p>Bienvenue à toute la famille Sainte-Famille.</p></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-time">À définir</div><div class="timeline-pin">♡</div><div class="timeline-card"><span>💬</span><div><h3>Retrouvailles et échanges</h3><p>Les souvenirs revivent et de nouveaux liens se créent.</p></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-time">À définir</div><div class="timeline-pin">✦</div><div class="timeline-card"><span>👕</span><div><h3>Présentation des équipes</h3><p>Applaudissons les anciens et les nouveaux élèves.</p></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-time">À définir</div><div class="timeline-pin">⚽</div><div class="timeline-card"><span>🏃</span><div><h3>Échauffement dans la bonne humeur</h3><p>On se prépare, on s’encourage et on garde le sourire.</p></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-time">À définir</div><div class="timeline-pin">⚽</div><div class="timeline-card"><span>🎉</span><div><h3>Coup d’envoi du match amical</h3><p>Place au jeu, au respect et au fair-play.</p></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-time">À définir</div><div class="timeline-pin">♫</div><div class="timeline-card"><span>🥤</span><div><h3>Pause et animations</h3><p>Un moment pour souffler et partager de bons moments.</p></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-time">À définir</div><div class="timeline-pin">⚽</div><div class="timeline-card"><span>👏</span><div><h3>Reprise et fin du match</h3><p>Félicitations aux deux équipes, quel que soit le score.</p></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-time">À définir</div><div class="timeline-pin">📸</div><div class="timeline-card"><span>📷</span><div><h3>Photos de groupe</h3><p>Gardons une trace de cette belle journée.</p></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-time">À définir</div><div class="timeline-pin">♡</div><div class="timeline-card"><span>🙏</span><div><h3>Convivialité et remerciements</h3><p>La journée se termine, mais notre famille continue.</p></div></div></article>
+        </div>
+        <p class="program-note">Les horaires sont provisoires et doivent être complétés par l’organisateur.</p>
+      </section>
+
+      <section class="memories-section section" id="souvenirs">
+        <div class="section-heading reveal"><p class="eyebrow">DES INSTANTS QUI RESTENT</p><h2>Nos souvenirs, <span class="green-text">notre histoire</span></h2><p>Ajoutez vos propres photos dans le dossier <code>photos</code> pour personnaliser cette galerie.</p></div>
+        <div class="gallery">
+          <figure class="gallery-item gallery-large reveal"><img src="photos/12.jpg" alt="Terrain et ambiance de football" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder"><span>⚽</span><small>Ajoutez photos/souvenir-1.jpg</small></div><figcaption><span>01</span><strong>Notre école</strong></figcaption></figure>
+          <figure class="gallery-item reveal"><img src="photos/13.jpg" alt="Anciens élèves réunis" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder"><span>🤝</span><small>Ajoutez photos/souvenir-2.jpg</small></div><figcaption><span>02</span><strong>Nos retrouvailles</strong></figcaption></figure>
+          <figure class="gallery-item reveal"><img src="photos/14.jpg" alt="Élèves actuels sur le terrain" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder"><span>💚</span><small>Ajoutez photos/souvenir-3.jpg</small></div><figcaption><span>03</span><strong>Notre fraternité</strong></figcaption></figure>
+          <figure class="gallery-item reveal"><img src="photos/15.jpg" alt="Moment de joie après un match" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder"><span>🎉</span><small>Ajoutez photos/souvenir-4.jpg</small></div><figcaption><span>04</span><strong>La joie de jouer</strong></figcaption></figure>
+          <figure class="gallery-item gallery-wide reveal"><img src="photos/16.jpg" alt="Photo de groupe de la communauté scolaire" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder"><span>📸</span><small>Ajoutez photos/souvenir-5.jpg</small></div><figcaption><span>05</span><strong>Une famille pour toujours</strong></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="register-section section" id="participer">
+        <div class="register-copy reveal"><p class="eyebrow">VOUS FAITES PARTIE DE L’HISTOIRE</p><h2>Votre place est <span>parmi nous !</span></h2><p>Que vous veniez jouer, encourager ou simplement retrouver vos camarades, votre présence compte.</p><div class="register-perks"><span>♡ Une famille</span><span>⚽ Un match amical</span><span>✦ Des souvenirs</span></div><div class="register-contact"><small>ORGANISATEUR</small><strong id="organizer-display">À compléter</strong><small>CONTACT</small><strong id="contact-display">Facultatif — à compléter</strong></div></div>
+        <form class="register-form reveal" id="registration-form">
+          <h3>Confirmer ma participation</h3><p class="form-intro">Remplissez ce formulaire pour manifester votre intérêt.</p>
+          <label for="full-name">Nom et prénom <span>*</span></label><input id="full-name" name="name" autocomplete="name" required placeholder="Ex. : Jean Dupont">
+          <label for="category">Je suis <span>*</span></label><select id="category" name="category" required><option value="">Choisir une catégorie</option><option>Ancien élève</option><option>Nouvel élève</option><option>Enseignant</option><option>Parent</option><option>Invité</option></select>
+          <label for="participation">Je viens comme <span>*</span></label><select id="participation" name="participation" required><option value="">Choisir un type</option><option>Joueur / joueuse</option><option>Supporter / supportrice</option></select>
+          <label for="companions">Nombre de personnes accompagnantes</label><input id="companions" name="companions" type="number" min="0" max="50" value="0">
+          <label for="contact">Contact (facultatif)</label><input id="contact" name="contact" autocomplete="tel" placeholder="Téléphone ou e-mail">
+          <button class="button button-green form-submit" type="submit">Confirmer ma participation <span>→</span></button>
+          <p class="form-note">La confirmation en ligne nécessite une connexion à un service de réception. Sans cette configuration, le formulaire préparera un message WhatsApp au lieu de prétendre avoir envoyé vos données.</p>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <section class="practical-section section" id="infos">
+        <div class="section-heading reveal"><p class="eyebrow">PRÉPARONS-NOUS ENSEMBLE</p><h2>Informations <span class="green-text">pratiques</span></h2><p>Les informations officielles seront ajoutées par l’équipe organisatrice.</p></div>
+        <div class="practical-grid">
+          <article class="practical-card reveal"><span class="practical-icon">📅</span><small>DATE & HEURE</small><h3 data-event="date">À compléter</h3><p data-event="time">À compléter</p></article>
+          <article class="practical-card reveal"><span class="practical-icon">📍</span><small>LIEU DE RENCONTRE</small><h3 data-event="venue">À compléter</h3><p id="address-display">Adresse à compléter</p><a class="text-link" id="maps-link" href="#" target="_blank" rel="noopener" aria-disabled="true">Trouver le terrain ↗</a></article>
+          <article class="practical-card reveal"><span class="practical-icon">💬</span><small>INVITEZ VOTRE FAMILLE</small><h3>Faites passer le mot</h3><p>Partagez cette invitation avec vos camarades et vos proches.</p><button class="text-link button-as-link" id="whatsapp-share">Partager sur WhatsApp ↗</button></article>
+        </div>
+      </section>
+
+      <section class="values-section section">
+        <div class="section-heading reveal"><p class="eyebrow">CE QUI NOUS RASSEMBLE</p><h2>Nos valeurs, <span class="green-text">notre force</span></h2></div>
+        <div class="values-grid">
+          <article class="value-card reveal"><span>♡</span><h3>Fraternité</h3><p>Nous formons une seule famille.</p></article>
+          <article class="value-card reveal"><span>🤝</span><h3>Respect</h3><p>Chaque personne mérite considération.</p></article>
+          <article class="value-card reveal"><span>✦</span><h3>Solidarité</h3><p>Nous avançons en nous soutenant.</p></article>
+          <article class="value-card reveal"><span>⚽</span><h3>Fair-play</h3><p>Le plaisir de jouer passe avant le score.</p></article>
+        </div>
+        <blockquote class="values-quote reveal">Le plus beau résultat ne sera pas seulement celui inscrit au tableau d’affichage, mais les liens que nous aurons renforcés et les souvenirs que nous aurons créés ensemble.</blockquote>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top"><div class="footer-brand"><span class="brand-icon">✦</span><div><strong>COLLÈGE SAINTE-FAMILLE</strong><p>UNE SEULE ÉCOLE, PLUSIEURS GÉNÉRATIONS,<br>UNE MÊME FAMILLE !</p></div></div><div class="footer-actions"><button class="button button-gold" id="footer-whatsapp">Partager l’invitation ↗</button><button class="button button-outline" id="copy-link">Copier le lien</button></div></div>
+      <div class="footer-bottom"><span>Merci aux élèves, anciens élèves, enseignants et organisateurs.</span><span>© <span id="year"></span> Collège Sainte-Famille</span></div>
+    </footer>
+  </div>
+  <noscript><p class="noscript">Ce site a besoin de JavaScript pour les animations et le compte à rebours. Activez JavaScript dans votre navigateur.</p></noscript>
+</body>
+</html>
